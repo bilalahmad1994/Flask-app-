@@ -1,5 +1,4 @@
 from flask import Flask,request
-
 app = Flask(__name__)
 
 
@@ -25,7 +24,6 @@ def hello_world():
 # @app.route('/method')
 # def methodname():
 #     return 'you are using %s'%request.method
-
 
 
 # @app.route('/name/<username>')
