@@ -8,5 +8,11 @@ app = Flask(__name__)
 def index(user=None):
     return render_template("name.html", user=user)
 
+@app.route('/shopping')
+def shopping():
+    food=['vegetables','fruits','snacks','cheese']
+    return render_template('shopping.html',food=food)
+
+
 if __name__ == '__main__':
     app.run()
